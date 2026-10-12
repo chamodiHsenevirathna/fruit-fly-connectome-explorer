@@ -1,0 +1,76 @@
+[     0s] scan: schema ['body_pre', 'body_post', 'weight'], 2318 batches
+[     0s] scan: batch 0/2318
+[    11s] scan: batch 200/2318
+[    22s] scan: batch 400/2318
+[    37s] scan: batch 600/2318
+[    53s] scan: batch 800/2318
+[    73s] scan: batch 1000/2318
+[    95s] scan: batch 1200/2318
+[   119s] scan: batch 1400/2318
+[   146s] scan: batch 1600/2318
+[   176s] scan: batch 1800/2318
+[   208s] scan: batch 2000/2318
+[   244s] scan: batch 2200/2318
+[   279s] scan: done, 151856684 rows; 1834661 distinct pre, 87576984 distinct post; checkpoint saved
+[   289s] dup: 151856684 unique pairs, 0 extra duplicate records (saved)
+[   296s] final: union 88384522 ids in 6.46s
+[   300s] final: wrote outputs/tables/validation_summary.json
+{
+ "batches_read": 2318,
+ "rows": 151856684,
+ "nulls": 0,
+ "self_loops": 123,
+ "nonpositive_ids": 0,
+ "nonpositive_weights": 0,
+ "max_id": 1571863634,
+ "weight_min": 1,
+ "weight_max": 2591,
+ "weight_sum": 311833243,
+ "distinct_weight_values": 791,
+ "weight_nonincreasing_violations_batches": 0,
+ "unique_directed_pairs": 151856684,
+ "extra_duplicate_records": 0,
+ "distinct_pre": 1834661,
+ "distinct_post": 87576984,
+ "distinct_any": 88384522,
+ "sum_out_strength": 311833243,
+ "sum_in_strength": 311833243,
+ "sum_out_degree": 151856684,
+ "sum_in_degree": 151856684,
+ "consistency_ok": true,
+ "unmatched_ids_distinct": 88192826,
+ "unmatched_ids_examples": [
+  10036,
+  10055,
+  12598,
+  13202,
+  13437,
+  13677,
+  14073,
+  14159,
+  14172,
+  14302
+ ],
+ "rows_with_unmatched_pre": 12609167,
+ "rows_with_unmatched_post": 121196945,
+ "rows_with_any_unmatched": 125828298,
+ "annotated_bodies": 211577,
+ "annotated_not_in_connections": 19881,
+ "weight_ge": {
+  "1": 151856684,
+  "2": 57670765,
+  "3": 23014406,
+  "5": 7622864,
+  "10": 2799910,
+  "20": 1068256,
+  "50": 228233,
+  "100": 55520
+ },
+ "weight_sum_ge": {
+  "1": 311833243,
+  "5": 97991093,
+  "10": 67915328,
+  "20": 44955885
+ }
+}
+exit=0

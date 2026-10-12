@@ -1,0 +1,150 @@
+{
+ "batches_read": 2318,
+ "rows": 151856684,
+ "nulls": 0,
+ "self_loops": 123,
+ "nonpositive_ids": 0,
+ "nonpositive_weights": 0,
+ "max_id": 1571863634,
+ "weight_min": 1,
+ "weight_max": 2591,
+ "weight_sum": 311833243,
+ "distinct_weight_values": 791,
+ "weight_nonincreasing_violations_batches": 0,
+ "unique_directed_pairs": 151856684,
+ "extra_duplicate_records": 0,
+ "distinct_pre": 1834661,
+ "distinct_post": 87576984,
+ "distinct_any": 88384522,
+ "sum_out_strength": 311833243,
+ "sum_in_strength": 311833243,
+ "sum_out_degree": 151856684,
+ "sum_in_degree": 151856684,
+ "consistency_ok": true,
+ "unmatched_ids_distinct": 88192826,
+ "unmatched_ids_examples": [
+  10036,
+  10055,
+  12598,
+  13202,
+  13437,
+  13677,
+  14073,
+  14159,
+  14172,
+  14302
+ ],
+ "rows_with_unmatched_pre": 12609167,
+ "rows_with_unmatched_post": 121196945,
+ "rows_with_any_unmatched": 125828298,
+ "annotated_bodies": 211577,
+ "annotated_not_in_connections": 19881,
+ "weight_ge": {
+  "1": 151856684,
+  "2": 57670765,
+  "3": 23014406,
+  "5": 7622864,
+  "10": 2799910,
+  "20": 1068256,
+  "50": 228233,
+  "100": 55520
+ },
+ "weight_sum_ge": {
+  "1": 311833243,
+  "5": 97991093,
+  "10": 67915328,
+  "20": 44955885
+ },
+ "candidate_neuron_sets": {
+  "superclass_notna": {
+   "n_annotated": 166700,
+   "n_in_connections": 166576,
+   "n_with_outgoing": 165665,
+   "n_with_incoming": 166529,
+   "edges_both_ends": 25582938,
+   "edges_both_ends_by_min_weight": {
+    "1": 25582938,
+    "2": 15283237,
+    "3": 10520431,
+    "5": 6242118,
+    "10": 2753975,
+    "20": 1063871
+   }
+  },
+  "status_Traced": {
+   "n_annotated": 165122,
+   "n_in_connections": 164789,
+   "n_with_outgoing": 163763,
+   "n_with_incoming": 164722,
+   "edges_both_ends": 25563197,
+   "edges_both_ends_by_min_weight": {
+    "1": 25563197,
+    "2": 15270273,
+    "3": 10511038,
+    "5": 6235682,
+    "10": 2749407,
+    "20": 1060438
+   }
+  },
+  "type_notna": {
+   "n_annotated": 164506,
+   "n_in_connections": 164446,
+   "n_with_outgoing": 163589,
+   "n_with_incoming": 164423,
+   "edges_both_ends": 25135616,
+   "edges_both_ends_by_min_weight": {
+    "1": 25135616,
+    "2": 15028051,
+    "3": 10349880,
+    "5": 6143869,
+    "10": 2712768,
+    "20": 1049742
+   }
+  },
+  "superclass_notna_and_Traced": {
+   "n_annotated": 164606,
+   "n_in_connections": 164490,
+   "n_with_outgoing": 163583,
+   "n_with_incoming": 164446,
+   "edges_both_ends": 25558671,
+   "edges_both_ends_by_min_weight": {
+    "1": 25558671,
+    "2": 15267873,
+    "3": 10509540,
+    "5": 6234901,
+    "10": 2749124,
+    "20": 1060363
+   }
+  },
+  "superclass_notna_or_Traced": {
+   "n_annotated": 167216,
+   "n_in_connections": 166875,
+   "n_with_outgoing": 165845,
+   "n_with_incoming": 166805,
+   "edges_both_ends": 25587572,
+   "edges_both_ends_by_min_weight": {
+    "1": 25587572,
+    "2": 15285698,
+    "3": 10521971,
+    "5": 6242929,
+    "10": 2754274,
+    "20": 1063950
+   }
+  },
+  "annotated_any": {
+   "n_annotated": 211577,
+   "n_in_connections": 191696,
+   "n_with_outgoing": 186159,
+   "n_with_incoming": 189751,
+   "edges_both_ends": 26028386,
+   "edges_both_ends_by_min_weight": {
+    "1": 26028386,
+    "2": 15514634,
+    "3": 10653945,
+    "5": 6300108,
+    "10": 2769379,
+    "20": 1067386
+   }
+  }
+ }
+}

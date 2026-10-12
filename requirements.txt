@@ -1,0 +1,9 @@
+# Colab-friendly install: pip install -r requirements.txt
+# (Colab already ships most of these; pins are minimums, exact tested versions are in docs/data_dictionary.md)
+pandas>=2.0
+pyarrow>=14
+numpy>=1.26
+networkx>=3.2
+matplotlib>=3.8
+requests>=2.31
+pytest>=8

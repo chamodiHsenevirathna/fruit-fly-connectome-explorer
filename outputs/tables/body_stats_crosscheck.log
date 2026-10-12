@@ -1,0 +1,34 @@
+rows sampled: 500746 | columns: ['body', 'pre', 'post', 'status_fine', 'superclass', 'class', 'type', 'instance', 'downstream', 'synweight', 'rank']
+body-stats.post == our_in_strength: 1.0000 of sampled bodies
+body-stats.downstream == our_out_strength: 1.0000 of sampled bodies
+body-stats.pre == our_out_degree: 0.7154 of sampled bodies
+body-stats.synweight == our_in_strength: 0.7151 of sampled bodies
+
+per batch: share in annotation file, status_fine counts (top 5), superclass non-null share
+0 n=65536 in_annot=1.000 superclass_notna=0.999 {'Roughly traced': 29760, 'Prelim Roughly traced': 19202, 'Reviewed': 16309, 'RT Hard to trace': 212}
+1 n=65536 in_annot=1.000 superclass_notna=0.997 {'Roughly traced': 30005, 'Reviewed': 23054, 'Prelim Roughly traced': 11914, 'RT Hard to trace': 307}
+50 n=65536 in_annot=0.000 superclass_notna=0.000 {'': 65525, 'Glia': 4, 'Orphan': 4, 'Orphan hotknife': 2}
+300 n=65536 in_annot=0.000 superclass_notna=0.000 {'': 65535, 'Glia': 1}
+700 n=65536 in_annot=0.000 superclass_notna=0.000 {'': 65536}
+1000 n=65536 in_annot=0.000 superclass_notna=0.000 {'': 65536}
+1200 n=65536 in_annot=0.000 superclass_notna=0.000 {'': 65536}
+1348 n=41994 in_annot=0.000 superclass_notna=0.000 {'': 41994}
+
+last batch sample:
+              body  pre  post  downstream  synweight  our_in_strength  our_out_strength
+458752  653598608    0     1           0          1                1                 0
+458753  653598611    0     1           0          1                1                 0
+458754  653598617    0     1           0          1                1                 0
+458755  653598640    0     1           0          1                1                 0
+458756  653598648    0     1           0          1                1                 0
+
+sample rows from batch 0 (largest):
+     body    pre    post  downstream  synweight  rank  our_in_strength  our_out_strength    superclass type
+0  10009  31347   82705      188515     271220     1            82705            188515  ol_intrinsic  CT1
+1  10157  29405   75837      177665     253502     2            75837            177665  ol_intrinsic  CT1
+2  10977  16911  118348      133530     251878     3           118348            133530  cb_intrinsic  APL
+3  10540  15966  124656      123836     248492     4           124656            123836  cb_intrinsic  APL
+
+bodies in both tables: 131068
+superclass agrees (incl. both null): 1.0000
+type agrees (incl. both null):       1.0000

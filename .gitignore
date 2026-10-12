@@ -1,0 +1,21 @@
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+
+# Scientific data: never commit (obtain via the documented download step)
+data/raw/*
+data/interim/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+*.feather
+*.parquet
+*.swc
+
+# Secrets
+.env
+*token*
