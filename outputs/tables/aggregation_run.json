@@ -1,0 +1,8 @@
+{
+ "batches": 2318,
+ "rows_seen": 151856684,
+ "seconds": 78,
+ "peak_memory_mb": 845,
+ "identity_checks": 60,
+ "identity_failures": 0
+}

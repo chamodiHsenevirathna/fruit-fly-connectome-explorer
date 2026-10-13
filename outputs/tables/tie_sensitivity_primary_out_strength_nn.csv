@@ -1,0 +1,1 @@
+population,metric,threshold_a,threshold_b,k,boundary_tie_a,boundary_tie_b,jaccard_id_deterministic,jaccard_inclusive,mc_mean,mc_sd,mc_sem,mc_p2_5,mc_p97_5,id_minus_mc_mean,n_draws,seed

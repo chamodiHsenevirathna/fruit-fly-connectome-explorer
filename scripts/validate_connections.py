@@ -1,4 +1,4 @@
-"""Phase 1b: low-memory, checkpointed streaming validation of the connection table.
+"""Low-memory, checkpointed streaming validation of the connection table.
 
 Usage: validate_connections.py <feather path or URL> <annotations feather>
          [--max-batches N] [--out DIR] [--tmp DIR] [--stages scan,dup,final]

@@ -9,15 +9,14 @@ description = "Threshold-sensitivity analysis of neuron rankings in the MaleCNS 
 requires-python = ">=3.10"
 dependencies = [
     "pandas>=2.0",
-    "pyarrow>=14",
+    "pyarrow>=23.0.1",
     "numpy>=1.26",
-    "networkx>=3.2",
     "matplotlib>=3.8",
-    "requests>=2.31",
+    "requests>=2.33.0",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8"]
+dev = ["pytest>=9.0.3"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

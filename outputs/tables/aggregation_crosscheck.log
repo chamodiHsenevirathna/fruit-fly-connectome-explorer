@@ -1,0 +1,30 @@
+Streaming aggregator vs independent pandas reference (scripts/compare_aggregation_to_pandas.py), real data slices.
+Slices chosen where the weight falls through thresholds 50, 20, 10, 5, 2 (batches 3, 16, 42, 116, 879), plus the first 50 batches.
+Compared per slice: 2 populations x 6 thresholds x 8 per-body metrics over all 211,577 annotated bodies, 4 edge-category totals, global totals.
+
+slice batches [0,50): identity checks: 60/60 passed
+slice batches [0,50): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [2,5): identity checks: 60/60 passed
+slice batches [2,5): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [15,18): identity checks: 60/60 passed
+slice batches [15,18): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [41,44): identity checks: 60/60 passed
+slice batches [41,44): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [115,118): identity checks: 60/60 passed
+slice batches [115,118): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [878,881): identity checks: 60/60 passed
+slice batches [878,881): TOTAL MISMATCHES: 0 -> ALL MATCH
+
+--- Repeat after moving the reference into src/connectome/reference.py (shared by the tests and this script) ---
+slice batches [0,50): identity checks: 60/60 passed
+slice batches [0,50): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [2,5): identity checks: 60/60 passed
+slice batches [2,5): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [15,18): identity checks: 60/60 passed
+slice batches [15,18): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [41,44): identity checks: 60/60 passed
+slice batches [41,44): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [115,118): identity checks: 60/60 passed
+slice batches [115,118): TOTAL MISMATCHES: 0 -> ALL MATCH
+slice batches [878,881): identity checks: 60/60 passed
+slice batches [878,881): TOTAL MISMATCHES: 0 -> ALL MATCH

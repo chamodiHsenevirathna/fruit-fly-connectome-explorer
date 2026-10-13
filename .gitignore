@@ -1,13 +1,26 @@
-# Environments and caches
+# Environments, caches, editor and tool state
 .venv/
+venv/
 __pycache__/
 *.pyc
 .pytest_cache/
 .ipynb_checkpoints/
 .DS_Store
 *.egg-info/
+.vscode/
+.idea/
+.claude/
 
-# Scientific data: never commit (obtain via the documented download step)
+# Build, test and tool artefacts
+build/
+dist/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+nohup.out
+
+# Scientific data and large intermediates: never commit (obtain via the documented download step)
 data/raw/*
 data/interim/*
 !data/raw/.gitkeep
@@ -15,7 +28,35 @@ data/interim/*
 *.feather
 *.parquet
 *.swc
+*.pkl
+# NOTE: *.npz also blocks small test fixtures; add one deliberately with `git add -f path/to/fixture.npz`
+*.npz
+*.npy
+*.u64
 
-# Secrets
+# Secrets and credentials
 .env
-*token*
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.ssh/
+.aws/
+credentials
+credentials.*
+*credentials*.json
+service-account*.json
+.token
+*.token
+*token.txt
+*token.json
+neuprint*token*
+secrets.*
+
+# Internal working notes: kept locally, deliberately NOT part of the public repository
+docs/data_dictionary.md
+docs/internal/
